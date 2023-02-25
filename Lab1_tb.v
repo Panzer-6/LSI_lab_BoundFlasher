@@ -6,12 +6,34 @@ module bound_flasher_tb;
 		clk = 1'b0;
 		flick = 1'b0;
 		reset = 1'b0;
+		//straight_cycle_run
+		
+//		#10 flick = 1'b1;
+//		#10 flick = 1'b0;
+		
+		//kick_back_1
+		
+//		#10 flick = 1'b1;
+
+		//kick_back_2
+		
+//		#10 flick = 1'b1;
+//		#10 flick = 1'b0;
+//		#180 flick = 1'b1;
+		
+		//kick_back_3
+		
+//		#10 flick = 1'b1;
+//		#10 flick = 1'b0;
+//		#180 flick = 1'b1;
+//		#400 reset = 1'b1;
+//		#10 reset = 1'b0;
+		
+		//reset
 		#10 flick = 1'b1;
-		#20 flick = 0;
-		#170 flick = 1'b1;
-		#300 reset = 1'b1;
-		#10 reset = 1'b0; 
-		//#60 flick = 1'b0;
+		#10 flick = 1'b0;
+		#30 reset = 1'b1;
+
 	end
 	always #5 clk = ~clk;
 

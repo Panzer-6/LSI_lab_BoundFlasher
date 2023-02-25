@@ -1,6 +1,6 @@
 module bound_flasher(clk, flick, reset, led_out);
 	input clk, flick, reset;
-	reg[0:3] state;
+	reg[0:2] state;
 	reg rollBack;
 	output reg[15:0] led_out;
 	
